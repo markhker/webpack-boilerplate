@@ -1,0 +1,96 @@
+// _base.scss
+/* Border box */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 20rem) {
+    html {
+        font-size: calc(1rem + 0.7 * ((100vw - 20rem) / 30));
+    }
+}
+@media screen and (min-width: 50rem) {
+    html {
+        font-size: 1.7rem;
+    }
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-stack;
+    color: $b-1;
+    margin: 0;
+    padding: 0;
+    background-color: $w;
+    line-height: 1.5rem;
+    
+    p {
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    a {
+        text-decoration: none;
+        background-color: transparent;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: calc((1.5rem - 2rem) + 1.5rem);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-top: calc((1.5rem - 1.5rem) + 1.5rem*2);
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        margin-top: calc((1.5rem - 1.25rem) + 1.5rem*2);
+    }
+
+    h4 {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-top: calc((1.5rem - 1rem) + 1.5rem*2);
+    }
+
+    h5 {
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        margin-top: calc((1.5rem - 0.875rem) + 1.5rem*2);
+    }
+}
+
+::-moz-selection {
+    background-color: $b-w;
+    color: $w;
+}
+
+::selection {
+    background-color: $b-1;
+    color: $w;
+}
+
+.hrstyled {
+    border: 0;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    transform: translateY(1rem);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

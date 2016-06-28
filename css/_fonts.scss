@@ -1,0 +1,13 @@
+// _fonts.scss
+
+@font-face {
+ font-family: 'main';
+ src: url(http://example.com/main.eot);
+ src: url(http://example.com/main.eot?#iefix) format('embedded-opentype'),
+ url(http://example.com/main.woff2) format('woff2'),
+ url(http://example.com/main.woff) format('woff'),
+ url(http://example.com/main.ttf) format('truetype'),
+ url(http://example.com/main.svg#main) format('svg');
+ font-weight: 100;
+ font-style: normal;
+}
